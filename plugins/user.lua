@@ -10,6 +10,8 @@ return {
   --   end,
   -- },
   "folke/todo-comments.nvim",
+  "ThePrimeagen/vim-be-good",
+  "tpope/vim-obsession",
   {
     "nvim-lua/plenary.nvim",
     config = function()

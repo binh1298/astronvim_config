@@ -20,15 +20,14 @@ return {
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
-    ["<leader>a"] = { "<cmd>echo 'Hello World!'<cr>", desc = "Say Hello World" },
     ["<S-Tab>"] = { ":bprev<CR>", desc = "Prev file" },
     ["<Tab>"] = { ":bnext<CR>", desc = "Next file" },
-
+    ["<leader>a"] = { ":source $MYVIMRC<CR>", desc = "Reload nvim config" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
   t = {
-    -- setting a mapping to false will disable it
+    --setting a mapping to false will disable it
     -- ["<esc>"] = false,
   },
 }
